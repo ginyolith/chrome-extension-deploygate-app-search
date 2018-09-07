@@ -1,0 +1,30 @@
+{
+    "name": "Example 0: Hello World in Console",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "This is an example to print Hello World in Chrome console",
+    "icons": {
+      "18": "icons/18.png",
+      "19": "icons/19.png",
+      "38": "icons/38.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://deploygate.com/organizations/*"
+            ],
+            "js" : [
+                "content-script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "embeded-script.js"
+    ],
+    "permissions": [
+        "<all_urls>"
+    ]
+  }
+  
